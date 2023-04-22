@@ -1,0 +1,21 @@
+.App {
+    max-width: 920px;
+    margin-top: 50px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.App__icon {
+    margin-bottom: 41px;
+}
+
+@media screen and (min-width: 768px) {
+    .App {
+        margin-bottom: 126px;
+    }
+
+    .App__icon {
+        margin-bottom: 88px;
+    }
+}
