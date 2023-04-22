@@ -1,0 +1,16 @@
+.TipCalculator {
+    padding: 32px 24px;
+    box-shadow: 0 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    background-color: var(--white);
+    display: grid;
+    align-items: center;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(327px, 1fr));
+}
+
+@media screen and (min-width: 768px) {
+    .TipCalculator {
+        padding: 32px;
+    }
+}
