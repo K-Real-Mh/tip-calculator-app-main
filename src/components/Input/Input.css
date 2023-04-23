@@ -1,0 +1,63 @@
+.Input__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.Input__label {
+    display: block;
+    color: var(--dark-grayish-cyan);
+}
+
+.Input__error-text {
+    margin-left: auto;
+    margin-right: 0;
+    color: var(--orange);
+}
+
+.Input__wrapper {
+    position: relative;
+}
+
+.Input__wrapper svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
+}
+
+.Input__input {
+    background: var(--very-light-grayish-cyan-2);
+    border-radius: 5px;
+    text-align: right;
+    font-size: 24px;
+    font-family: inherit;
+    padding: 6px 17px;
+    border: 2px solid var(--very-light-grayish-cyan-2);
+    color: var(--very-dark-cyan);
+    transition: border-color var(--transition);
+    caret-color: var(--strong-cyan);
+}
+
+.Input__input.Input__input--error {
+    border-color: var(--orange);
+}
+
+.Input__input.Input__input--with-icon {
+    padding: 6px 17px 6px 30px;
+}
+
+.Input__input::placeholder {
+    color: var(--very-dark-cyan);
+    opacity: 0.35;
+}
+
+.Input__input:focus, .Input__input:focus-visible {
+    outline: none;
+}
+
+.Input__input:focus, .Input__input:hover {
+    border: 2px solid var(--strong-cyan);
+}
