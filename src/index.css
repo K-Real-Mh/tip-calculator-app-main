@@ -31,7 +31,11 @@
   --logo-icon-cyan: hsl(180, 25%, 32%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --very-light-grayish-cyan-2: hsl(185, 38%, 97%);
   --white: hsl(0, 0%, 100%);
+  --orange: hsl(13, 70%, 60%);
+
+  --transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 body {
