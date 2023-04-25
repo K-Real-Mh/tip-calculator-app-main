@@ -24,6 +24,8 @@
   background-color: var(--light-grayish-cyan);
 
   --strong-cyan: hsl(172, 67%, 45%);
+  --soft-cyan: hsl(173, 61%, 77%);
+  --dark-cyan: hsl(183, 78%, 24%);
   --very-dark-cyan: hsl(183, 100%, 15%);
   --dark-grayish-cyan: hsl(186, 14%, 43%);
   --grayish-cyan: hsl(184, 14%, 56%);
