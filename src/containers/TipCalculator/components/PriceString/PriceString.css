@@ -1,0 +1,19 @@
+.PriceString {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PriceString__title {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.PriceString__subtitle {
+    font-size: 13px;
+    color: var(--grayish-cyan);
+}
+
+.PriceString__price {
+    font-size: 32px;
+}
