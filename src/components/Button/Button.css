@@ -1,0 +1,23 @@
+.Button {
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+.Button.Button--disabled {
+    background-color: var(--dark-cyan);
+}
+
+.Button:focus {
+    outline: none;
+}
+
+.Button:focus, .Button:hover {
+    background-color: var(--soft-cyan);
+}
