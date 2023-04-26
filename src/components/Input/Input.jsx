@@ -34,7 +34,7 @@ function Input({
           id={id}
           value={value}
           placeholder={placeholder}
-          onChange={onChange}
+          onChange={(e) => onChange(e.target.value)}
           inputMode={inputMode}
         />
         {icon && icon}

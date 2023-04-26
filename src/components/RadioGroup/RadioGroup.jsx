@@ -9,9 +9,9 @@ function RadioGroup({ className, label, name, radios, value, onChange }) {
     onChange(event.target.value);
   };
 
-  const handleChangeCustom = (event) => {
+  const handleChangeCustom = (newValue) => {
     setIsCustom(true);
-    onChange(event.target.value);
+    onChange(newValue);
   };
 
   return (
