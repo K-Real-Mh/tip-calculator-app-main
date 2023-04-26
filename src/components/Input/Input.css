@@ -63,3 +63,7 @@
 .Input__input:focus, .Input__input:hover {
     border: 2px solid var(--strong-cyan);
 }
+
+.Input__input.Input__input--error:focus, .Input__input.Input__input--error:hover {
+    border-color: var(--orange);
+}
