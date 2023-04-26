@@ -6,7 +6,7 @@ import { reset, updateBill, updatePeople, updatePercentage } from '../context/ac
 import PriceString from '../components/PriceString/PriceString';
 
 function BlockWrapper({ type }) {
-  const { bill, people, isPeopleError, percentage, tip, total } = useTipCalculatorContext();
+  const { bill, people, isPeopleError, percentage, tip, total, dispatch } = useTipCalculatorContext();
 
   if (type === BLOCK_TYPES.BILL) {
     return (
@@ -17,7 +17,7 @@ function BlockWrapper({ type }) {
         icon={<Icon name="DollarIcon" width="10" height="16" />}
         placeholder="0"
         value={bill}
-        onChange={updateBill}
+        onChange={(value) => dispatch(updateBill(value))}
       />
     );
   }
@@ -28,7 +28,7 @@ function BlockWrapper({ type }) {
         label="Select Tip %"
         radios={RADIOS}
         value={percentage}
-        onChange={updatePercentage}
+        onChange={(value) => dispatch(updatePercentage(value))}
       />
     );
   }
@@ -43,7 +43,7 @@ function BlockWrapper({ type }) {
         value={people}
         error={isPeopleError}
         errorText="Can't be zero"
-        onChange={updatePeople}
+        onChange={(value) => dispatch(updatePeople(value))}
       />
     );
   }
@@ -53,7 +53,7 @@ function BlockWrapper({ type }) {
     return (
       <Button
         text='RESET'
-        onClick={reset}
+        onClick={() => dispatch(reset())}
         isDisabled={bill === '' && tip === '' && people === ''}
       />
     );
