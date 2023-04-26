@@ -6,7 +6,7 @@ import { reset, updateBill, updatePeople, updatePercentage } from '../context/ac
 import PriceString from '../components/PriceString/PriceString';
 
 function BlockWrapper({ type }) {
-  const { bill, people, percentage, tip, total } = useTipCalculatorContext();
+  const { bill, people, isPeopleError, percentage, tip, total } = useTipCalculatorContext();
 
   if (type === BLOCK_TYPES.BILL) {
     return (
@@ -41,7 +41,7 @@ function BlockWrapper({ type }) {
         icon={<Icon name="PersonIcon" width="13" height="16" />}
         placeholder="0"
         value={people}
-        error={people === '0'}
+        error={isPeopleError}
         errorText="Can't be zero"
         onChange={updatePeople}
       />
