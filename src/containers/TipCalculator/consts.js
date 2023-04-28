@@ -5,7 +5,7 @@ export const BLOCK_TYPES = {
   TIP: 'TIP',
   TOTAL: 'TOTAL',
   RESET: 'RESET',
-}
+};
 
 export const RADIOS = [
   { value: '5', label: '5%' },
@@ -13,4 +13,4 @@ export const RADIOS = [
   { value: '15', label: '15%' },
   { value: '25', label: '25%' },
   { value: '50', label: '50%' },
-]
+];

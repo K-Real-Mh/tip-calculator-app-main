@@ -5,9 +5,7 @@ export default function useTipCalculatorContext() {
   const context = useContext(store);
 
   if (!context) {
-    throw new Error(
-      'useTipCalculatorContext must be used within a TipCalculatorContextProvider'
-    );
+    throw new Error('useTipCalculatorContext must be used within a TipCalculatorContextProvider');
   }
 
   return context;

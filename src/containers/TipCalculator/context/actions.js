@@ -6,18 +6,18 @@ export const RESET = 'RESET';
 export const updateBill = (bill) => ({
   type: UPDATE_BILL,
   payload: bill,
-})
+});
 
 export const updatePercentage = (percentage) => ({
   type: UPDATE_PERCENTAGE,
   payload: percentage,
-})
+});
 
 export const updatePeople = (people) => ({
   type: UPDATE_PEOPLE,
   payload: people,
-})
+});
 
 export const reset = () => ({
   type: RESET,
-})
+});
