@@ -15,8 +15,8 @@ function TipCalculator() {
         </div>
         <div className="TipCalculator__display">
           <div className="TipCalculator__strings">
-            <BlockWrapper type={BLOCK_TYPES.TOTAL} />
-            <BlockWrapper type={BLOCK_TYPES.TIP} />
+            <BlockWrapper className="TipCalculator__string" type={BLOCK_TYPES.TOTAL} />
+            <BlockWrapper className="TipCalculator__string" type={BLOCK_TYPES.TIP} />
           </div>
           <BlockWrapper type={BLOCK_TYPES.RESET} />
         </div>

@@ -5,12 +5,13 @@ import { Button, Icon, Input, RadioGroup } from '../../../components';
 import { reset, updateBill, updatePeople, updatePercentage } from '../context/actions';
 import PriceString from '../components/PriceString/PriceString';
 
-function BlockWrapper({ type }) {
+function BlockWrapper({ className, type }) {
   const { bill, people, isPeopleError, percentage, tip, total, dispatch } = useTipCalculatorContext();
 
   if (type === BLOCK_TYPES.BILL) {
     return (
       <Input
+        className={className}
         label="Bill"
         id="bill"
         inputMode="decimal"
@@ -24,6 +25,7 @@ function BlockWrapper({ type }) {
   if (type === BLOCK_TYPES.PERCENTAGE) {
     return (
       <RadioGroup
+        className={className}
         name="percent"
         label="Select Tip %"
         radios={RADIOS}
@@ -35,6 +37,7 @@ function BlockWrapper({ type }) {
   if (type === BLOCK_TYPES.PEOPLE) {
     return (
       <Input
+        className={className}
         label="Number of People"
         id="people"
         inputMode="numeric"
@@ -47,11 +50,12 @@ function BlockWrapper({ type }) {
       />
     );
   }
-  if (type === BLOCK_TYPES.TIP) return <PriceString price={tip} title="Tip Amount" />;
-  if (type === BLOCK_TYPES.TOTAL) return <PriceString price={total} title="Total" />;
+  if (type === BLOCK_TYPES.TIP) return <PriceString className={className} price={tip} title="Tip Amount" />;
+  if (type === BLOCK_TYPES.TOTAL) return <PriceString className={className} price={total} title="Total" />;
   if (type === BLOCK_TYPES.RESET) {
     return (
       <Button
+        className={className}
         text='RESET'
         onClick={() => dispatch(reset())}
         isDisabled={bill === '' && tip === '' && people === ''}

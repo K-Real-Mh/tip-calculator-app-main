@@ -1,9 +1,9 @@
 import React from 'react';
 import './PriceString.css';
 
-function PriceString({title, price}) {
+function PriceString({className, title, price}) {
   return (
-  <div className="PriceString">
+  <div className={`PriceString ${className || ''}`}>
     <div className='PriceString__info'>
       <div className='PriceString__title'>{title}</div>
       <div className='PriceString__subtitle'>/ person</div>
