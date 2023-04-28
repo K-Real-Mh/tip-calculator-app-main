@@ -16,10 +16,24 @@
 
 .PriceString__price {
     font-size: 32px;
+    line-height: 48px;
+}
+
+.PriceString__price.PriceString__price--s {
+    font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
     .PriceString__price {
         font-size: 48px;
+        line-height: 72px;
+    }
+
+    .PriceString__price.PriceString__price--s {
+        font-size: 30px;
+    }
+
+    .PriceString__price.PriceString__price--xs {
+        font-size: 25px;
     }
 }
