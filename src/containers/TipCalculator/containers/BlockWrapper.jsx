@@ -19,6 +19,7 @@ function BlockWrapper({ className, type }) {
         placeholder="0"
         value={bill}
         onChange={(value) => dispatch(updateBill(value))}
+        maxLength={13}
       />
     );
   }
@@ -47,6 +48,7 @@ function BlockWrapper({ className, type }) {
         error={isPeopleError}
         errorText="Can't be zero"
         onChange={(value) => dispatch(updatePeople(value))}
+        maxLength={4}
       />
     );
   }

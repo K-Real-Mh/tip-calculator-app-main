@@ -12,6 +12,7 @@ function Input({
   value,
   onChange,
   icon,
+  maxLength,
 }) {
   return (
     <div className={`Input ${className || ''}`}>
@@ -36,6 +37,7 @@ function Input({
           placeholder={placeholder}
           onChange={(e) => onChange(e.target.value)}
           inputMode={inputMode}
+          maxLength={maxLength}
         />
         {icon && icon}
       </div>

@@ -38,6 +38,7 @@ function RadioGroup({ className, label, name, radios, value, onChange }) {
           inputMode="numeric"
           value={isCustom ? value : ''}
           onChange={handleChangeCustom}
+          maxLength={3}
         />
       </div>
     </div>
