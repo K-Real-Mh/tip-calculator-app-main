@@ -47,7 +47,7 @@ Users should be able to:
 
 - [Patterns](https://www.patterns.dev/) - This helped me for choose provider design pattern for working with state. I really liked this pattern and will use it going forward.
 - [Doka](https://doka.guide/) - This is a great site with documentation, it helped me solve my issues with css.
-- 
+
 ## Author
 
 - Linkedin - [Cyril Makhov](https://www.linkedin.com/in/cyril-makhov/)
