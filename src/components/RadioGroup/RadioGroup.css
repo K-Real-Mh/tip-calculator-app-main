@@ -1,6 +1,6 @@
 .RadioGroup__label {
     color: var(--dark-grayish-cyan);
-    margin-bottom: 6px;
+    margin-bottom: 16px;
     font-size: 16px;
 }
 
@@ -8,7 +8,7 @@
     display: grid;
     column-gap: 14px;
     row-gap: 16px;
-    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(117px, 1fr));
 }
 
 .RadioGroup__radio {
