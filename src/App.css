@@ -1,13 +1,18 @@
 .App {
-    max-width: 920px;
     margin-top: 50px;
     display: grid;
-    place-content: center;
     place-items: center;
 }
 
 .App__icon {
     margin-bottom: 41px;
+    align-self: center;
+}
+
+@media screen and (min-width: 920px) {
+    .App {
+        width: 920px;
+    }
 }
 
 @media screen and (min-width: 768px) {
